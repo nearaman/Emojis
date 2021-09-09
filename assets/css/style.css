@@ -19,7 +19,7 @@ h1 {
   -ms-user-select: none;
   user-select: none;
   transition: all 0.3s;
-  font-size: 50px;
+  font-size: 40px;
 }
 /* Emoji Text Eand */
 p {
@@ -70,6 +70,9 @@ button {
   padding: 5px 0;
   font-family: "Fira Mono", monospace;
   font-size: 15px;
+  align-items: center;
+  justify-self: center;
+  place-items: center;
 
   /* Position the tooltip */
   position: absolute;
