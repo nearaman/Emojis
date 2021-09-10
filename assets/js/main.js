@@ -17,7 +17,6 @@ let rendom = Math.floor(Math.random() * text.length);
 h1.innerText = text[rendom];
 
 function dark() {
-  console.log("Dark Mode Activated");
   let body = document.getElementsByTagName("body");
   let text = document.getElementsByTagName("p");
   let button = document.getElementById("style");
@@ -32,7 +31,6 @@ function dark() {
 }
 
 function white() {
-  console.log("White Mode Activated");
   let body = document.getElementsByTagName("body");
   let text = document.getElementsByTagName("p");
   let button = document.getElementById("style");
@@ -47,7 +45,6 @@ function white() {
 }
 
 function loadEmoji() {
-  console.log("Emojis Changed");
   let rendom = Math.floor(Math.random() * text.length);
   h1.innerText = text[rendom];
 }
