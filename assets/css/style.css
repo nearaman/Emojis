@@ -60,26 +60,3 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgb(29, 29, 29);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  font-family: "Fira Mono", monospace;
-  font-size: 15px;
-  align-items: center;
-  justify-self: center;
-  place-items: center;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  font-family: "Fira Mono", monospace;
-}
