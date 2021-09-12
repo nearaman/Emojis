@@ -1,5 +1,5 @@
 //for backgroung sound volume
-var audio = document.getElementById("audio2").volume=0.1;
+let audio = document.getElementById("audio2").volume=0.1;
 
 //chang emojis on relode automatically
 var h1 = document.getElementById("heading");
@@ -38,7 +38,7 @@ function dark() {
   let text = document.getElementsByTagName("p");
   let button = document.getElementById("style");
 
-  var audio = document.getElementById("audio");
+  let audio = document.getElementById("audio");
   audio.volume = 0.2;
   audio.play();
 
@@ -57,7 +57,7 @@ function white() {
   let body = document.getElementsByTagName("body");
   let text = document.getElementsByTagName("p");
   let button = document.getElementById("style");
-  var audio = document.getElementById("audio");
+  let audio = document.getElementById("audio");
   audio.volume = 0.2;
   audio.play();
 
@@ -72,7 +72,18 @@ function white() {
 
 // Click Sound
 function play() {
-  var audio = document.getElementById("audio");
+  let audio = document.getElementById("audio");
   audio.volume = 0.2;
   audio.play();
+}
+
+// Change dark mode acoding to time
+
+var today = new Date(); 
+
+
+if (today.getHours() >= 18) {
+  dark();
+} else {
+  white();
 }
