@@ -1,26 +1,42 @@
+<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metas -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Theme Color -->
     <meta name="theme-color" content="#fff" />
+    <!-- Favicon -->
     <link
       rel="shortcut icon"
       href="/assets/images/icon.png"
       type="image/x-icon"
     />
+    <!-- Title -->
     <title>Emojis</title>
   </head>
   <body>
+    <!-- Body -->
+    <!-- Div of all -->
     <div class="container">
+      <!-- div for center -->
       <div class="center">
+        <!-- Emojis heading -->
         <h1 id="heading"></h1>
-        <p onclick="loadEmoji()">Change Emojis</p>
+        <!-- Button to change emojis -->
+        <p onclick="loadEmoji(), play()">Change Emojis</p>
+        <!-- Sonuds -->
+        <!-- Background Sound -->
+        <audio id="audio2" src="/assets/audios/background.mp3" autoplay loop></audio>
+        <!-- Click sound -->
+        <audio id="audio" src="assets/audios/click.mp3"></audio>
       </div>
+      <!-- Dark mode -->
       <div id="style" class="style">
-        <button onclick="dark()">
+        <button onclick="dark(), play()">
           <img
             src="assets/images/moon-outline.svg"
             height="32rem"
@@ -30,5 +46,6 @@
       </div>
     </div>
   </body>
+  <!-- Link JS -->
   <script src="./assets/js/main.js"></script>
 </html>
