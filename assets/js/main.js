@@ -1,5 +1,5 @@
 //for backgroung sound volume
-let audio = document.getElementById("audio2").volume=0.1;
+var audio = document.getElementById("audio2").volume=0.1;
 
 //chang emojis on relode automatically
 var h1 = document.getElementById("heading");
