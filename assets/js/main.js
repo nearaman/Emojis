@@ -1,15 +1,15 @@
 var h1 = document.getElementById("heading");
 var text = [
-  "🤓 😰 🤕 🤠 😿",
-  "😡 🤯 🥵 🥶 👿",
-  "😇 😋 🤪 🤩 💩",
-  "🥳 🤬 😱 🤢 😈",
-  "🤩 🤮 👾 🤖 🎃",
-  "👹 👻 💀 ☠️ 👽",
-  "😂 😊 😤 😴 🤡",
-  "🥸 🤗 🤐 🤮 🤒",
-  "🥰 😝 😒 😟 😫",
-  "🍎 🍩 🍺 🥂 🍷",
+    "🤓 😰 🤕 🤠 😿",
+    "😡 🤯 🥵 🥶 👿",
+    "😇 😋 🤪 🤩 💩",
+    "🥳 🤬 😱 🤢 😈",
+    "🤩 🤮 👾 🤖 🎃",
+    "👹 👻 💀 ☠️ 👽",
+    "😂 😊 😤 😴 🤡",
+    "🥸 🤗 🤐 🤮 🤒",
+    "🥰 😝 😒 😟 😫",
+    "🍎 🍩 🍺 🥂 🍷",
 ];
 
 let rendom = Math.floor(Math.random() * text.length);
@@ -17,34 +17,34 @@ let rendom = Math.floor(Math.random() * text.length);
 h1.innerText = text[rendom];
 
 function dark() {
-  let body = document.getElementsByTagName("body");
-  let text = document.getElementsByTagName("p");
-  let button = document.getElementById("style");
+    let body = document.getElementsByTagName("body");
+    let text = document.getElementsByTagName("p");
+    let button = document.getElementById("style");
 
-  body[0].style.backgroundColor = "#111920";
-  text[0].style.color = "#fff";
+    body[0].style.backgroundColor = "#111920";
+    text[0].style.color = "#fff";
 
-  let darkButton =
-    '<button style="background-color: transparent; border-color: transparent; cursor: pointer;" onclick="white()"><img src="assets/images/sun-outline.svg" height="32rem" width="32rem"/></button>';
+    let darkButton =
+        '<button style="background-color: transparent; border-color: transparent; cursor: pointer;" onclick="white()"><img src="assets/images/sun-outline.svg" height="32rem" width="32rem"/></button>';
 
-  button.innerHTML = darkButton;
+    button.innerHTML = darkButton;
 }
 
 function white() {
-  let body = document.getElementsByTagName("body");
-  let text = document.getElementsByTagName("p");
-  let button = document.getElementById("style");
+    let body = document.getElementsByTagName("body");
+    let text = document.getElementsByTagName("p");
+    let button = document.getElementById("style");
 
-  body[0].style.backgroundColor = "#fff";
-  text[0].style.color = "#111920";
+    body[0].style.backgroundColor = "#fff";
+    text[0].style.color = "#111920";
 
-  let darkButton =
-    '<button style="background-color: transparent; border-color: transparent; cursor: pointer;" onclick="dark()"><img src="assets/images/moon-outline.svg" height="32rem" width="32rem"/></button>';
+    let darkButton =
+        '<button style="background-color: transparent; border-color: transparent; cursor: pointer;" onclick="dark()"><img src="assets/images/moon-outline.svg" height="32rem" width="32rem"/></button>';
 
-  button.innerHTML = darkButton;
+    button.innerHTML = darkButton;
 }
 
 function loadEmoji() {
-  let rendom = Math.floor(Math.random() * text.length);
-  h1.innerText = text[rendom];
+    let rendom = Math.floor(Math.random() * text.length);
+    h1.innerText = text[rendom];
 }
